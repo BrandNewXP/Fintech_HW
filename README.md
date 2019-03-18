@@ -29,4 +29,4 @@
 ### 2. 如果遇到
 
     HTTPError: HTTP Error 500: Internal Server Error
-待更新
+關掉Chrome重新執行程式
