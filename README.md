@@ -1,1 +1,20 @@
 # Fintech_HW1
+
+## ETF_Crawler
+### 1. 你選擇用甚麼樣的套件來做網路爬蟲?為什麼要用這個套件
+* requests，因為要爬Yahoo Finance的資。YF提供自選時間段跟ETF類型的歷史資料下載，所以直接餵URL拿資料。
+* jupyter notebook跟pandas分別拿來做coding和datagram。 
+### 2. 請用流程圖的方式告訴我們你是怎麼抓到你的目標資料，流程圖的畫法不拘，主要易懂就好
+* 分析YF的資料下載網址 → 把每個ETF三年內的資料下載好 → 單獨抓出Adj Close的一行 → 全部的ETF繪製成datagram
+* 更詳細的流程看程式註記。
+### 3. 至少設想並列出 5 種當別人使用你的程式最有可能會遇到的錯誤情況，並提供解決辦法
+#### 1. ipynb怎麼開？
+* 下載ipython notebook，執行ipython notebook xxx.ipynb，或是下載jupyter notebook後執行。
+#### 2. 歷史資料無法下載下來。
+* 測試階段網址還沒出現過錯誤（雖然不保證不會出錯）可以先檢查網路連線
+#### 3. 為什麼資料有NaN？
+* 因為Yahoo Finance上沒有資料。
+#### 4. 資料時間段有問題。
+* 程式抓的是2015/12/31到現在系統時間的區段，你的系統時間可能不正確。 
+#### 5. STEP 2的function好像沒有用到？
+* 對，因為他只是測試抓資料沒問題的測試函式
