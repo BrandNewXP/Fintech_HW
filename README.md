@@ -18,3 +18,15 @@
 * 程式抓的是2015/12/31到現在系統時間的區段，你的系統時間可能不正確。 
 #### 5. STEP 2的function好像沒有用到？
 * 對，因為他只是測試抓資料沒問題的測試函式
+
+## TED_Crawler
+### 1. 如果用MAC OS遇到
+
+    urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
+就要執行下面的指令，Python資料夾的名稱根據版本而定。HTTPError: HTTP Error 500: Internal Server Error
+
+    Macintosh HD > Applications > Python3.7 > 執行Install Certificates.command
+### 2. 如果遇到
+
+    HTTPError: HTTP Error 500: Internal Server Error
+待更新
